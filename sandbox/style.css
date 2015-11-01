@@ -1,0 +1,34 @@
+/* Reset & Defaults */
+
+* {margin: 0; padding: 0;}
+
+
+
+/* Layout */
+
+#top { position: relative; background-color: #5d1f00; height:50px; width: 100%;}
+
+#middle { position: relative; background-color: black; height:1000px;}
+
+#bottom {  position: relative; background-color: #5d1f00; height: 350px; width: 100%;}
+
+.wrap {  position: relative; margin: 0 auto; width: 1000px;}
+
+#headerA {position: relative; width:1000px; height: 50px;}
+#headerB {position: relative; width: 1000px; height: 237px; background-image: url(images/headerB.jpg);}
+
+
+#mainNav{
+	float: left;
+	width:238px;
+	height:556px;
+	background-image: url(images/mainNavBg2.jpg);
+	margin-left: -102px;
+	}
+	
+#mainCont{
+	float: right;
+	width: 864px;
+	background-color: black;
+	}
+	

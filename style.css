@@ -1,0 +1,24 @@
+/* Reset & Defaults */
+
+* {margin: 0; padding: 0;}
+
+
+
+/* Layout */
+
+#top { position: relative; background-color: #5d1f00; height:50px; width: 100%;}
+
+#middle { position: relative; background-color: black; height:1000px;}
+
+#bottom {  position: relative; background-color: #5d1f00; height: 350px; width: 100%;}
+
+#wrap {  position: relative; margin: 0 auto; background-color: pink; height: 1000px; width: 1000px;}
+
+#mainnav{
+float:left;
+width:200px;
+height: 500px;
+Background-color: green;
+}
+
+<>

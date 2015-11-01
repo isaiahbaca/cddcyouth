@@ -1,0 +1,79 @@
+<head>
+  <title>Example</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://thunderdome.atpay.com/sdk/v3.js"></script>
+  
+  <script type="text/javascript">
+    $(function(){
+      atpay.config({
+        partner_id: 1202,
+        client_id: "fjtiub9jx9go327f05midy5vy542t78"
+      });
+    });
+    
+    function returnFunc(data) {
+        alert(data);
+        console.log(data);
+    }
+    
+    $(document).ready(function() {
+       $("#atpay-card").submit(function(e) {
+          e.preventDefault();
+          atpay.register("#atpay-card",returnFunc)
+       });
+    });
+  </script>
+</head>
+ 
+<body>
+  <form action="/submit" method="POST" id="atpay-card">
+    <!-- phone number is passed to @Pay as "phone", and to your server as "phone_number" -->
+    <label for="phone_number">phone_number</label>
+    <input type="text" name="phone_number" data-atpay="phone" />
+    
+    <label for="first">first</label>
+    <input type="text" name="first" data-atpay="first_name" />
+    
+    <label for="last">last</label>
+    <input type="text" name="last" data-atpay="last_name" />
+    
+    <label for="email">email</label>
+    <input type="text" name="email" data-atpay="email" />
+    
+    <label for="street">street</label>
+    <input type="text" name="street" data-atpay="street" />
+    
+    <label for="city">city</label>
+    <input type="text" name="city" data-atpay="city" />
+    
+    <label for="state">state</label>
+    <input type="text" name="state" data-atpay="state" />
+    
+    <label for="zip">zip</label>
+    <input type="text" name="zip" data-atpay="zip" />
+    
+    <label for="country">country</label>
+    <input type="text" name="country" data-atpay="country" value="United States" />
+    
+    <label for="phone">phone</label>
+    <input type="text" name="phone" data-atpay="phone" />
+    
+    <label for="card-number">card-number</label>
+    <input type="text" data-atpay="card_number" data-atpay-protected="true" />
+    
+    <label for="card_type">card_type</label>
+    <input type="text" data-atpay="card_type" />
+    
+    <label for="exp_month">exp_month</label>
+    <input type="text" data-atpay="exp_month" />
+    
+    <label for="exp_year">exp_year</label>
+    <input type="text" data-atpay="exp_year" />
+    
+    <label for="cvc">cvc</label>
+    <input type="text" data-atpay="cvc" data-atpay-protected="true" />
+ 
+    <input type="submit" />
+  </form>
+</body>
+</pre>

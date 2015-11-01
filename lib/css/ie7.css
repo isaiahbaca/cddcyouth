@@ -1,0 +1,47 @@
+/* ------- 1. Form ------- */
+
+.single_input { padding-top:5px;}
+#input_search { padding-top:5px !important; margin-top:-1px; }
+.big_input { padding-top:5px !important;}
+#select_other { width:108px;}
+
+/* ------ 2. Buttons ------ */
+
+#contact_btn li { padding-left:7px !important; height:30px; }
+.submit_form { font-size:1px; color:#fff;}
+a.more { float:right; position:relative; padding-right:15px;}
+a.more span { margin-top:1px; position:absolute;}
+
+
+/* ------- 3. General ------ */
+
+#gallery_page { margin-bottom:10px;}
+.gallery_navigation { position:relative; bottom:0; filter: progid:DXImageTransform.Microsoft.Shadow(color='#FFFFFF', Direction=145, Strength=1);}
+
+#filters li { z-index:10000;}
+.cat .subfilters { margin-left:-150px; }
+.date .subfilters { margin-left:-115px; }
+
+.post_unite { width:100%; padding:0 5px 0 0;}
+.post_info { margin-right:7px !important;}
+
+#list_comments { border-top:1px solid #9c9b9b;}
+#list_comments .comment { border-bottom:none;}
+.comment_author .comment_date { width:70%;}
+
+.portfolio_gallery .wrapper { margin-left:-316px; }
+.portfolio_gallery .description p { line-height:12px;}
+
+/* ------- 4. Tables ------- */
+
+.code tr td { border:1px solid #D6D6D6; }
+
+/* ------- 5. List style ------- */
+
+ul.links li { list-style-image :none !important; padding-left:5px !important; list-style-position:outside; }
+ul.links li a { background:url(../../images/bullet_disc.png) no-repeat scroll left 2px; padding:0 0 0 20px;}
+.bullet_circle { list-style-image:none; list-style:disc;}
+
+/* ------- 6. Extras ------- */
+
+.dropcap2 { margin-top:-5px !important;}
